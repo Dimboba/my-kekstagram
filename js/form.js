@@ -2,7 +2,6 @@ import {closeImgUpload} from './bigPicture.js';
 
 const form = document.querySelector('.img-upload__form');
 //const templateSuccess = document.querySelector('#success').content;
-
 const pristine = new Pristine(form, {
   classTo: 'img-upload__text',
   successClass: 'form--valid',
@@ -15,7 +14,6 @@ const pristine = new Pristine(form, {
 function validComment(comment){
   return comment.length >= 20 && comment.length <=140;
 }
-
 
 pristine.addValidator(
   form.querySelector('.text__description'),
